@@ -1,0 +1,370 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #f5f5f5;
+}
+
+.infoBody {
+    margin-top: 6%;
+    margin-left: 20%;
+}
+
+.title {
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.body1 {
+    position: relative;
+    top: 20px;
+}
+
+.price1 {
+    font-size: 25px;
+    color: #ff6700;
+}
+
+.price2 {
+    position: relative;
+    top: -24.7px;
+    left: 5.8%;
+    font-size: 15px;
+    font-weight: 450;
+    color: #ff6700;
+}
+
+.vertical-bar {
+    position: relative;
+    top: -51.5px;
+    left: 10.3%;
+    font-size: 20px;
+    color: #D1CBCB
+}
+
+.house-type {
+    position: relative;
+    top: -79px;
+    left: 12.5%;
+    font-size: 23px;
+}
+
+.vertical-bar2 {
+    position: relative;
+    top: -108px;
+    left: 23%;
+    font-size: 20px;
+    color: #D1CBCB
+}
+
+.area1 {
+    position: relative;
+    top: -135px;
+    left: 25%;
+    font-size: 24px;
+}
+
+.area2 {
+    position: relative;
+    top: -158px;
+    left: 29%;
+    font-size: 15px;
+}
+
+.rent-type {
+    position: relative;
+    top: -178.3px;
+    left: 35%;
+    font-size: 15px;
+    background:rgba(228,236,218,1.00);
+    width: 45px;
+    height: 23px;
+    text-align: center;
+    border-radius: 10px;
+    color:rgba(138,157,126,1.00);
+}
+
+.orientation {
+    position: relative;
+    top: -202px;
+    left: 40%;
+    font-size: 15px;
+    width: 45px;
+    height: 23px;
+    text-align: center;
+    border-radius: 10px;
+    background:rgba(247,234,228,1.00);
+    color: rgba(228,128,96,1.00);
+}
+
+.collection {
+    position: relative;
+    top: -207px;
+    left: 46%;
+}
+
+.collection-img {
+    position: relative;
+    top: -3px;
+}
+
+.collection-img img{
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+}
+
+.collection-text {
+    position: relative;
+    top: -26px;
+    left: 32px;
+}
+
+.collection-text a{
+    text-decoration: none;
+    color: rgba(22,161,220,1.00);
+}
+
+.collection a:link{
+    color: rgba(22,161,220,1.00);
+}
+
+.collection a:visited{
+    color: rgba(22,161,220,1.00);
+}
+
+.img {
+    position: relative;
+    top: -230px;
+    width: 700px;
+    height: 530px;
+}
+
+.img img {
+    width: 700px;
+    height: 530px;
+}
+
+.house-info {
+    position: relative;
+    top: -230px;
+    font-size: 25px;
+}
+
+.bottom-black-box {
+    position: relative;
+    top: -210px;
+    background: #9B9595;
+    width: 60%;
+    height: 1px;
+}
+
+.revise {
+    position: relative;
+    top: -200px;
+}
+
+.house-type1 {
+    font-size: 17px;
+    color: #9B9595;
+}
+
+.house-type2 {
+    font-size: 17px;
+    position: relative;
+    top: -23px;
+    left: 50px;
+}
+
+.area3 {
+    font-size: 17px;
+    color: #9B9595;
+    position: relative;
+    top: -45px;
+    left: 250px;
+}
+
+.area4 {
+    font-size: 17px;
+    position: relative;
+    top: -66px;
+    left: 300px;
+}
+
+.orientation1 {
+    font-size: 17px;
+    color: #9B9595;
+    position: relative;
+    left:500px;
+    top: -87px;
+}
+
+.orientation2 {
+    font-size: 17px;
+    position: relative;
+    left:550px;
+    top: -109px;
+}
+
+.floor1 {
+    font-size: 17px;
+    color: #9B9595;
+    position: relative;
+    top:-90px;
+}
+
+.floor2 {
+    font-size: 17px;
+    position: relative;
+    top:-112px;
+    left: 50px;
+}
+
+.rent-type1 {
+    font-size: 17px;
+    color: #9B9595;
+    position: relative;
+    left: 250px;
+    top: -133px;
+}
+
+.rent-type2 {
+    font-size: 17px;
+    position: relative;
+    left: 330px;
+    top: -154.9px;
+}
+
+.address1 {
+    font-size: 17px;
+    color: #9B9595;
+    position: relative;
+    left: 500px;
+    top: -178px;
+}
+
+.address2 {
+    font-size: 17px;
+    position: relative;
+    left: 550px;
+    top: -199px;
+}
+
+.contact1 {
+    font-size: 17px;
+    color: #9B9595;
+    position: relative;
+    top: -180px;
+}
+
+.contact2 {
+    font-size: 17px;
+    position: relative;
+    left: 60px;
+    top: -201px;
+}
+
+.phone1 {
+    font-size: 17px;
+    color: #9B9595;
+    position: relative;
+    left: 250px;
+    top: -222px;
+}
+
+.phone2 {
+    font-size: 17px;
+    position: relative;
+    left: 330px;
+    top: -243px;
+}
+
+.revise2 {
+    position: relative;
+    top: -150px;
+}
+
+.content {
+    font-size: 17px;
+    position: relative;
+    top: -200px;
+}
+
+.revise3 {
+    position: relative;
+    top: 90px;
+}
+
+.answerbody {
+    position: relative;
+    top: -100px;
+}
+
+.question {
+    display: inline-block;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.date {
+    display: inline-block;
+    font-size: 14px;
+    color: #b0b0b0;
+    position: relative;
+    left: 4%;
+}
+
+
+.answer-date {
+    display: inline-block;
+    font-size: 14px;
+    color: #b0b0b0;
+    position: relative;
+    left: 2%;
+}
+
+.myanswer {
+    display: inline-block;
+    font-size: 20px;
+    position: absolute;
+    right: 40%;
+}
+
+.myanswer a {
+    text-decoration: none;
+    color: rgba(13,167,223,1.00);
+}
+
+.myanswer a:visited {
+    color: rgba(13,167,223,1.00);
+}
+
+.myanswer a:link {
+    color: rgba(13,167,223,1.00);
+}
+
+.userquestion {
+    position: relative;
+    top: -70px;
+}
+
+.userquestion a{
+    text-decoration: none;
+    background: #ff6700;
+    text-align: center;
+    display: block;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 10px;
+}
+
+.userquestion a:link{
+    color: white;
+}
+
+.userquestion a:visited{
+    color: white;
+}

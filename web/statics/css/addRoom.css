@@ -1,0 +1,98 @@
+.AddBody {
+    margin-top: 6%;
+    margin-left: 40%;
+}
+
+.title {
+    position: relative;
+    left: 12.5%;
+    font-size: 30px;
+    bottom: 40px;
+}
+
+.push {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.box {
+    position: relative;
+    top:20px;
+}
+
+.box1 {
+    display: inline-block;
+    font-size: 22px;
+    position: relative;
+    left: -17px;
+}
+
+.box2 {
+    display: inline-block;
+}
+
+.box3 {
+    margin-left: 23px;
+    width: 300px;
+    height: 28px;
+    font-size: 22px;
+}
+
+.box4 {
+    display: inline-block;
+    margin-left: 23px;
+    width: 300px;
+    height: 30px;
+    font-size: 22px;
+}
+
+.box5 {
+    display: inline-block;
+    font-size: 22px;
+}
+
+.img-btn {
+    margin-left: 23px;
+    font-size: 17px;
+    height:30px;
+}
+
+.box6 {
+    margin-left: 1px;
+    width: 300px;
+    height: 28px;
+    font-size: 22px;
+}
+
+.box7 {
+    margin-left: -20px;
+    width: 300px;
+    height: 28px;
+    font-size: 22px;
+}
+
+.submit {
+    position: relative;
+    left: 15%;
+    top: 50px;
+    width: 100px;
+    height: 40px;
+}
+
+#submit-btn {
+    width: 100px;
+    height: 40px;
+    background: #ff6700;
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+}
+
+.lastchoose {
+    display: inline-block;
+    font-size: 17px;
+    margin-left: 20px;
+    font-weight: 500;
+    color: #ff6700;
+}

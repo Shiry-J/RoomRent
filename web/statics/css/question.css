@@ -1,0 +1,53 @@
+.questionBody {
+    margin-top: 6%;
+    margin-left: 40%;
+}
+
+.title1 {
+    display: inline-block;
+    font-size: 35px;
+    font-weight: 550;
+}
+
+.title2 {
+    display: inline-block;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.content {
+    margin-top: 30px;
+    font-size: 20px;
+    width: 700px;
+    height: 70px;
+}
+
+.title3 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 550;
+}
+
+.questioncontent {
+    margin-bottom: 30px;
+}
+
+.questioncontent input {
+    width: 600px;
+    height: 150px;
+    font-size: 20px;
+}
+
+.submit {
+    margin-left: 250px;
+}
+
+#submit-btn {
+    width: 100px;
+    height: 40px;
+    background: #ff6700;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}

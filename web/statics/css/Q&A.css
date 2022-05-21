@@ -1,0 +1,61 @@
+.abody {
+    margin-top: 6%;
+    margin-left: 15%;
+}
+
+.title1 {
+    margin-bottom: 60px;
+    font-size: 30px;
+    font-weight: 530;
+}
+
+.title2 {
+    margin-left: 40px;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.title3 {
+    display: inline-block;
+}
+
+.title4 {
+    display: inline-block;
+    position: absolute;
+    right: 15%;
+}
+
+.title4 a {
+    display: inline-block;
+    text-decoration: none;
+    background: #ff6700;
+    text-align: center;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    margin-left: 25px;
+    border-radius: 10px;
+}
+
+.title4 a:link {
+    color: white;
+}
+
+.title4 a:visited {
+    color: white;
+}
+
+.date {
+    display: inline-block;
+    margin-left: 20px;
+    font-size: 15px;
+    color: #b0b0b0;
+}
+
+.push {
+    height: 1px;
+    background: rgba(143,139,139,1.00);
+    width: 100%;
+    margin-left: 40px;
+    margin-bottom: 30px;
+}

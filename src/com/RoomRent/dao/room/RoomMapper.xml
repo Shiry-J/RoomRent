@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--namespace 命名空间 ：填写 对应此xml'文件的接口名-->
+<mapper namespace="com.RoomRent.dao.room.RoomMapper">
+
+    <select id="getRoomList" resultType="Room">
+        select * from roominfo where is_on = 1
+    </select>
+
+    <select id="getRoomInfoById" resultType="Room">
+        select * from roominfo where id = #{id}
+    </select>
+
+    <select id="getRoomListByLike" parameterType="String" resultType="Room">
+        select * from roominfo where title like CONCAT('%',#{search},'%')
+    </select>
+
+    <select id="getDialogueListByRoomId" resultType="Dialogue">
+        select * from dialogue where room_id = #{id}
+    </select>
+
+    <select id="getAnswerByRoomId" resultType="Answer">
+        select * from answer where room_id = #{id}
+    </select>
+
+    <insert id="addRoomQuestion" parameterType="Dialogue">
+        insert into dialogue(room_id,question_id,question_content,gmt_create,gmt_modified)
+        values(#{room_id},#{question_id},#{question_content},#{gmt_create},#{gmt_modified})
+    </insert>
+
+    <select id="getAnswerByDialogueId" resultType="Answer">
+        select * from answer where question_id = #{id}
+    </select>
+
+    <select id="getDialogueById" resultType="Dialogue">
+        select * from dialogue where id = #{id}
+    </select>
+
+    <insert id="addAnswer" parameterType="Answer">
+        insert into answer(room_id,question_id,answer_id,answer_content,answer_time,gmt_create,gmt_modified)
+        values(#{room_id},#{question_id},#{answer_id},#{answer_content},#{answer_time},#{gmt_create},#{gmt_modified})
+    </insert>
+
+    <select id="getUserCollectionById" resultType="UserCollection">
+        select * from usercollection where room_id = #{room_id} and user_id = #{user_id}
+    </select>
+
+    <insert id="addCollection" parameterType="UserCollection">
+        insert into usercollection(user_id,room_id,gmt_create,gmt_modified)
+        values(#{user_id},#{room_id},#{gmt_create},#{gmt_modified})
+    </insert>
+
+    <delete id="delCollectionById">
+        delete from usercollection where user_id = #{user_id} and room_id = #{room_id}
+    </delete>
+
+    <select id="getRoomListByUserId" resultType="Room">
+        select * from roominfo where id in(select room_id from usercollection where user_id = ${user_id})
+    </select>
+
+    <select id="getRoomListByRentId" resultType="Room">
+        select * from roominfo where rent_id = #{rent_id}
+    </select>
+
+    <insert id="addRoom" parameterType="Room">
+        insert into roominfo(rent_id,title,rent_type,house_type,orientation,area,region,community,floor,price,content,image,contacts,phone,is_on,gmt_create,gmt_modified)
+        values(#{rent_id},#{title},#{rent_type},#{house_type},#{orientation},#{area},#{region},#{community},#{floor},#{price},#{content},#{image},#{contacts},#{phone},#{is_on},#{gmt_create},#{gmt_modified})
+    </insert>
+
+    <update id="offRoom">
+        update roominfo set is_on = 0 where id=#{id}
+    </update>
+
+    <update id="onRoom">
+        update roominfo set is_on = 1 where id=#{id}
+    </update>
+
+    <delete id="delRoom">
+        delete from roominfo where id=#{id}
+    </delete>
+
+    <delete id="delanswer">
+        delete from answer where room_id=#{room_id}
+    </delete>
+
+    <delete id="delAnswerByid">
+        delete from answer where id=#{id}
+    </delete>
+
+    <delete id="deldialogue">
+        delete from dialogue where room_id=#{room_id}
+    </delete>
+
+    <delete id="delquestion">
+        delete from dialogue where id=#{id}
+    </delete>
+
+    <delete id="delAnswerByQuestionId">
+        delete from answer where question_id=#{question_id}
+    </delete>
+
+    <delete id="delcollection">
+        delete from usercollection where room_id=#{room_id}
+    </delete>
+
+    <update id="updateRoom">
+        update roominfo set title=#{title},rent_type=#{rent_type},house_type=#{house_type},
+                            orientation=#{orientation},area=#{area},region=#{region},community=#{community},floor=#{floor},
+                            price=#{price},content=#{content},image=#{image},contacts=#{contacts},phone=#{phone},
+                            gmt_modified=#{gmt_modified}
+                            where id=#{id}
+    </update>
+
+
+</mapper>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--namespace 命名空间 ：填写 对应此xml'文件的接口名-->
+<mapper namespace="com.RoomRent.dao.user.UserMapper">
+
+    <select id="getUserList" resultType="User">
+        select * from userinfo
+    </select>
+
+    <select id="getUserByUserName" resultType="User">
+        select * from userinfo where username = #{username}
+    </select>
+
+    <insert id="addUser" parameterType="User">
+        insert into userinfo(username,nickname,password,phone,email,type,gmt_create,gmt_modified)
+        values(#{username},#{nickname},#{password},#{phone},#{email},#{type},#{gmt_create},#{gmt_modified})
+    </insert>
+
+    <update id="modifyPasswordByid">
+        update userinfo set password = #{password} where id=#{id}
+    </update>
+
+    <update id="modifyNickNameByid">
+        update userinfo set nickname = #{nickname} where id=#{id}
+    </update>
+
+    <update id="modifyEmailByid">
+        update userinfo set email = #{email} where id=#{id}
+    </update>
+
+    <update id="modifyPhoneByid">
+        update userinfo set phone = #{phone} where id=#{id}
+    </update>
+
+    <select id="getDialogueListByUserId" resultType="Dialogue">
+        select * from dialogue where question_id = #{question_id}
+    </select>
+
+    <select id="getAnswerListByUserId" resultType="Answer">
+        select * from answer where answer_id = #{answer_id}
+    </select>
+
+</mapper>
